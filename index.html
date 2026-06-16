@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Black Flag Baseball League — Official league site for standings, schedules, recaps, and more." />
+  <title>Black Flag Baseball League</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-ticker">
+        <div>Week 9 Results: <span>Reapers 118 – Outlaws 104</span></div>
+        <div>Standings: <span>Reapers lead the West by 2 GB</span></div>
+        <div>Playoffs begin <span>Week 14</span></div>
+      </div>
+      <div>2026 Season</div>
+    </div>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Black <span>Flag</span> Baseball</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#standings">Standings</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="recaps/week9.html">Recaps</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO / BANNER ===== -->
+  <header class="hero" role="banner">
+    <div class="hero-content">
+      <p class="hero-eyebrow">&#9760; Official League Site · 2026 Season</p>
+      <h1 class="hero-title">
+        Black <em>Flag</em><br>Baseball<br>League
+      </h1>
+      <p class="hero-sub">Fantasy baseball fought hard. No mercy. No excuses.</p>
+      <div class="hero-actions">
+        <a href="#standings" class="btn btn-primary">View Standings</a>
+        <a href="recaps/week9.html" class="btn btn-outline">Week 9 Recap</a>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">Scroll</div>
+  </header>
+
+  <hr class="divider" />
+
+  <!-- ===== STANDINGS ===== -->
+  <section class="section" id="standings">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Standings</h2>
+        <p class="section-subtitle">Through Week 9 &mdash; Updated June 15, 2026</p>
+      </div>
+
+      <!-- WEST DIVISION -->
+      <h3 style="font-family:var(--font-heading);font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--flag-red);margin-bottom:12px;">&#9654; West Division</h3>
+      <div class="standings-wrapper" style="margin-bottom:36px;">
+        <table class="standings-table" aria-label="West Division Standings">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Team</th>
+              <th>W</th>
+              <th>L</th>
+              <th>GB</th>
+              <th>RS</th>
+              <th>RA</th>
+              <th>Streak</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="leader clinched">
+              <td class="rank">1</td>
+              <td class="team-name">Reapers</td>
+              <td>7</td><td>2</td><td class="gb">—</td>
+              <td>1,042</td><td>887</td>
+              <td style="color:var(--gold)">W5</td>
+            </tr>
+            <tr>
+              <td class="rank">2</td>
+              <td class="team-name">Dust Devils</td>
+              <td>5</td><td>4</td><td class="gb">2.0</td>
+              <td>984</td><td>960</td>
+              <td style="color:var(--flag-red)">L1</td>
+            </tr>
+            <tr>
+              <td class="rank">3</td>
+              <td class="team-name">Iron Wolves</td>
+              <td>4</td><td>5</td><td class="gb">3.0</td>
+              <td>921</td><td>958</td>
+              <td>W1</td>
+            </tr>
+            <tr>
+              <td class="rank">4</td>
+              <td class="team-name">Outlaws</td>
+              <td>3</td><td>6</td><td class="gb">4.0</td>
+              <td>896</td><td>1,012</td>
+              <td style="color:var(--flag-red)">L3</td>
+            </tr>
+            <tr>
+              <td class="rank">5</td>
+              <td class="team-name">Static Kings</td>
+              <td>2</td><td>7</td><td class="gb">5.0</td>
+              <td>851</td><td>1,023</td>
+              <td style="color:var(--flag-red)">L4</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- EAST DIVISION -->
+      <h3 style="font-family:var(--font-heading);font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--flag-red);margin-bottom:12px;">&#9654; East Division</h3>
+      <div class="standings-wrapper">
+        <table class="standings-table" aria-label="East Division Standings">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Team</th>
+              <th>W</th>
+              <th>L</th>
+              <th>GB</th>
+              <th>RS</th>
+              <th>RA</th>
+              <th>Streak</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="leader clinched">
+              <td class="rank">1</td>
+              <td class="team-name">Cannonballs</td>
+              <td>7</td><td>2</td><td class="gb">—</td>
+              <td>1,018</td><td>902</td>
+              <td style="color:var(--gold)">W3</td>
+            </tr>
+            <tr>
+              <td class="rank">2</td>
+              <td class="team-name">Nighthawks</td>
+              <td>6</td><td>3</td><td class="gb">1.0</td>
+              <td>999</td><td>944</td>
+              <td style="color:var(--gold)">W2</td>
+            </tr>
+            <tr>
+              <td class="rank">3</td>
+              <td class="team-name">Vault Rats</td>
+              <td>4</td><td>5</td><td class="gb">3.0</td>
+              <td>934</td><td>961</td>
+              <td>W1</td>
+            </tr>
+            <tr>
+              <td class="rank">4</td>
+              <td class="team-name">Gravel Pits</td>
+              <td>3</td><td>6</td><td class="gb">4.0</td>
+              <td>878</td><td>997</td>
+              <td style="color:var(--flag-red)">L2</td>
+            </tr>
+            <tr>
+              <td class="rank">5</td>
+              <td class="team-name">Renegades</td>
+              <td>2</td><td>7</td><td class="gb">5.0</td>
+              <td>842</td><td>1,055</td>
+              <td style="color:var(--flag-red)">L5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.75rem;color:var(--gray-500);margin-top:10px;font-family:var(--font-heading);letter-spacing:0.04em;">✓ Clinched playoff position &nbsp;·&nbsp; RS = Runs Scored &nbsp;·&nbsp; RA = Runs Against</p>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ===== SCHEDULE ===== -->
+  <section class="section section-alt" id="schedule">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Schedule</h2>
+        <p class="section-subtitle">Week 9 Results &amp; Week 10 Preview</p>
+      </div>
+
+      <h3 style="font-family:var(--font-heading);font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:16px;">Week 9 Results — June 8–14, 2026</h3>
+      <div class="schedule-grid" style="margin-bottom:44px;">
+
+        <div class="matchup-card">
+          <div class="matchup-week">Week 9 · West Division</div>
+          <div class="matchup-teams">
+            <div class="matchup-team">
+              <div class="matchup-team-name">Reapers</div>
+              <div class="matchup-score winner">118</div>
+            </div>
+            <div class="matchup-vs">vs</div>
+            <div class="matchup-team">
+              <div class="matchup-team-name">Outlaws</div>
+              <div class="matchup-score">104</div>
+            </div>
+          </div>
+          <div class="matchup-meta">
+            <span class="badge">Final</span>
+            <a href="recaps/week9.html" class="matchup-link">Full Recap &rarr;</a>
+          </div>
+        </div>
+
+        <div class="matchup-card">
+          <div class="matchup-week">Week 9 · West Division</div>
+          <div class="matchup-teams">
+            <div class="matchup-team">
+              <div class="matchup-team-name">Dust Devils</div>
+              <div class="matchup-score">99</div>
+            </div>
+            <div class="matchup-vs">vs</div>
+            <div class="matchup-team">
+              <div class="matchup-team-name">Iron Wolves</div>
+              <div class="matchup-score winner">107</div>
+            </div>
+          </div>
+          <div class="matchup-meta">
+            <span class="badge">Final</span>
+            <a href="recaps/week9.html" class="matchup-link">Full Recap &rarr;</a>
+          </div>
+        </div>
+
+        <div class="matchup-card">
+          <div class="matchup-week">Week 9 · East Division</div>
+          <div class="matchup-teams">
+            <div class="matchup-team">
+              <div class="matchup-team-name">Cannonballs</div>
+              <div class="matchup-score winner">112</div>
+            </div>
+            <div class="matchup-vs">vs</div>
+            <div class="matchup-team">
+              <div class="matchup-team-name">Renegades</div>
+              <div class="matchup-score">89</div>
+            </div>
+          </div>
+          <div class="matchup-meta">
+            <span class="badge">Final</span>
+            <a href="recaps/week9.html" class="matchup-link">Full Recap &rarr;</a>
+          </div>
+        </div>
+
+        <div class="matchup-card">
+          <div class="matchup-week">Week 9 · East Division</div>
+          <div class="matchup-teams">
+            <div class="matchup-team">
+              <div class="matchup-team-name">Nighthawks</div>
+              <div class="matchup-score winner">103</div>
+            </div>
+            <div class="matchup-vs">vs</div>
+            <div class="matchup-team">
+              <div class="matchup-team-name">Gravel Pits</div>
+              <div class="matchup-score">94</div>
+            </div>
+          </div>
+          <div class="matchup-meta">
+            <span class="badge">Final</span>
+            <a href="recaps/week9.html" class="matchup-link">Full Recap &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+
+      <h3 style="font-family:var(--font-heading);font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:16px;">Week 10 Preview — June 15–21, 2026</h3>
+      <div class="schedule-grid">
+
+        <div class="matchup-card">
+          <div class="matchup-week">Week 10 · West Division</div>
+          <div class="matchup-teams">
+            <div class="matchup-team">
+              <div class="matchup-team-name">Reapers</div>
+              <div class="matchup-score" style="color:var(--gray-500)">—</div>
+            </div>
+            <div class="matchup-vs">vs</div>
+            <div class="matchup-team">
+              <div class="matchup-team-name">Static Kings</div>
+              <div class="matchup-score" style="color:var(--gray-500)">—</div>
+            </div>
+          </div>
+          <div class="matchup-meta">
+            <span class="badge" style="background:var(--gray-700)">In Progress</span>
+          </div>
+        </div>
+
+        <div class="matchup-card">
+          <div class="matchup-week">Week 10 · East Division</div>
+          <div class="matchup-teams">
+            <div class="matchup-team">
+              <div class="matchup-team-name">Nighthawks</div>
+              <div class="matchup-score" style="color:var(--gray-500)">—</div>
+            </div>
+            <div class="matchup-vs">vs</div>
+            <div class="matchup-team">
+              <div class="matchup-team-name">Cannonballs</div>
+              <div class="matchup-score" style="color:var(--gray-500)">—</div>
+            </div>
+          </div>
+          <div class="matchup-meta">
+            <span class="badge" style="background:var(--gray-700)">In Progress</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ===== NEWS / RECAPS ===== -->
+  <section class="section" id="news">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">News &amp; Recaps</h2>
+        <p class="section-subtitle">Latest from around the league</p>
+      </div>
+      <div class="news-grid">
+
+        <article class="news-card">
+          <div class="news-card-img" style="background:linear-gradient(135deg,#1a1a1a,#330000);display:flex;align-items:center;justify-content:center;">
+            <span style="font-family:var(--font-display);font-size:3rem;color:var(--flag-red);opacity:0.6;">W9</span>
+          </div>
+          <div class="news-card-body">
+            <div class="news-card-label">&#9679; Recap</div>
+            <div class="news-card-title">Reapers Roll to Fifth Straight Win Behind Monster HR Output</div>
+            <p class="news-card-excerpt">Tyler's squad piled up 14 home runs in a dominant 118–104 Week 9 victory over the Outlaws to extend their division lead.</p>
+            <a href="recaps/week9.html" class="news-card-link matchup-link">Read Recap &rarr;</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-card-img" style="background:linear-gradient(135deg,#0a1a2a,#001a33);display:flex;align-items:center;justify-content:center;">
+            <span style="font-family:var(--font-display);font-size:2.5rem;color:var(--gold);opacity:0.5;">TRADE</span>
+          </div>
+          <div class="news-card-body">
+            <div class="news-card-label">&#9679; Transactions</div>
+            <div class="news-card-title">Iron Wolves Shake Up Roster — Deal Sends Three Players Packing</div>
+            <p class="news-card-excerpt">The Iron Wolves made three moves before the Week 9 deadline, targeting pitching depth heading into the back half.</p>
+            <a href="#" class="news-card-link matchup-link">Read More &rarr;</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-card-img" style="background:linear-gradient(135deg,#1a1200,#332200);display:flex;align-items:center;justify-content:center;">
+            <span style="font-family:var(--font-display);font-size:2rem;color:var(--gold-lt);opacity:0.5;">POWER</span>
+          </div>
+          <div class="news-card-body">
+            <div class="news-card-label">&#9679; Power Rankings</div>
+            <div class="news-card-title">Week 9 Power Rankings: Reapers Unmoved at No. 1</div>
+            <p class="news-card-excerpt">Our weekly power rankings following a full slate of Week 9 action — Cannonballs climb, Renegades continue to fall.</p>
+            <a href="#" class="news-card-link matchup-link">See Rankings &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section section-alt" id="about">
+    <div class="container" style="max-width:780px;">
+      <div class="section-header">
+        <h2 class="section-title">About the League</h2>
+        <p class="section-subtitle">Est. 2019 &mdash; Play with Honor, Win with Attitude</p>
+      </div>
+      <p style="color:var(--gray-200);font-size:1.05rem;margin-bottom:1.2em;">
+        The Black Flag Baseball League is a private fantasy baseball league built for managers who take the game seriously. Ten franchises. Two divisions. One champion. We run a full-draft, head-to-head points format across a 14-week regular season leading into a four-team playoff bracket.
+      </p>
+      <p style="color:var(--gray-500);font-size:0.95rem;">
+        Weekly recaps, official standings, trade news, and power rankings — all right here on the official BFBL site. Have a trade dispute or rules question? Drop it in the league Discord.
+      </p>
+      <div style="margin-top:28px;">
+        <a href="recaps/week9.html" class="btn btn-primary">Read Latest Recap</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Black <span>Flag</span> Baseball</div>
+          <p class="footer-desc">The official site of the Black Flag Baseball League. Ten teams. One champion. No excuses.</p>
+        </div>
+        <div>
+          <div class="footer-col-title">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="#standings">Standings</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="recaps/week9.html">Recaps</a></li>
+            <li><a href="#news">News</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Season Info</div>
+          <ul class="footer-links">
+            <li><a href="#about">About the League</a></li>
+            <li><a href="#">Rules &amp; Scoring</a></li>
+            <li><a href="#">Playoff Bracket</a></li>
+            <li><a href="#">All-Time Records</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Black Flag Baseball League</span>
+        <span>Built with GitHub Pages &mdash; Zero Cost, Maximum Swagger</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
