@@ -55,109 +55,128 @@
 
   <!-- ===== STANDINGS ===== -->
   <section class="section" id="standings">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">standings</h2>
-        <p class="section-subtitle">After Week 9 (May 25–31)</p>
+<div class="section-header">
+        <h2 class="section-title">Standings</h2>
+        <p class="section-subtitle">Updated: End of Week 11</p>
       </div>
 
-      <div class="standings-wrapper">
-        <table class="standings-table" aria-label="League Standings">
-          <thead>
-            <tr>
-              <th>Rank</th>
-              <th>Team</th>
-              <th>W</th>
-              <th>L</th>
-              <th>GB</th>
-              <th>Streak</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Playoff teams -->
-            <tr class="leader clinched">
-              <td class="rank">1</td>
-              <td class="team-name">Murder City Marauders</td>
-              <td>8</td><td>1</td><td class="gb">—</td>
-              <td style="color:var(--gold)">W7</td>
-            </tr>
-            <tr class="clinched">
-              <td class="rank">2</td>
-              <td class="team-name">Perdomo My Last Email</td>
-              <td>7</td><td>2</td><td class="gb">1.0</td>
-              <td style="color:var(--flag-red)">L1</td>
-            </tr>
-            <tr class="clinched">
-              <td class="rank">3</td>
-              <td class="team-name">G</td>
-              <td>7</td><td>2</td><td class="gb">1.0</td>
-              <td style="color:var(--gold)">W1</td>
-            </tr>
-            <tr class="clinched">
-              <td class="rank">4</td>
-              <td class="team-name">Harmon</td>
-              <td>6</td><td>3</td><td class="gb">2.0</td>
-              <td style="color:var(--gold)">W4</td>
-            </tr>
-            <!-- Playoff line -->
-            <tr>
-              <td colspan="6" style="background:rgba(204,0,0,0.12);text-align:center;font-family:var(--font-heading);font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--flag-red);padding:6px;border-bottom:2px dashed var(--flag-red);">
-                &#8212; Playoff Cutline &#8212;
-              </td>
-            </tr>
-            <tr>
-              <td class="rank">5</td>
-              <td class="team-name">Smuggler's Bay Skullcrushers</td>
-              <td>5</td><td>4</td><td class="gb">3.0</td>
-              <td style="color:var(--gold)">W1</td>
-            </tr>
-            <tr>
-              <td class="rank">6</td>
-              <td class="team-name">Ganzta's Paradise</td>
-              <td>4</td><td>5</td><td class="gb">4.0</td>
-              <td style="color:var(--flag-red)">L2</td>
-            </tr>
-            <tr>
-              <td class="rank">7</td>
-              <td class="team-name">Chicks Dig The Long Ball</td>
-              <td>4</td><td>5</td><td class="gb">4.0</td>
-              <td style="color:var(--gold)">W2</td>
-            </tr>
-            <tr>
-              <td class="rank">8</td>
-              <td class="team-name">Tidefall Thieves</td>
-              <td>3</td><td>6</td><td class="gb">5.0</td>
-              <td style="color:var(--flag-red)">L1</td>
-            </tr>
-            <tr>
-              <td class="rank">9</td>
-              <td class="team-name">Reefside Ruffians</td>
-              <td>3</td><td>6</td><td class="gb">5.0</td>
-              <td style="color:var(--flag-red)">L1</td>
-            </tr>
-            <tr>
-              <td class="rank">10</td>
-              <td class="team-name">Redwater Rumrunners</td>
-              <td>3</td><td>6</td><td class="gb">5.0</td>
-              <td style="color:var(--gold)">W1</td>
-            </tr>
-            <tr>
-              <td class="rank">11</td>
-              <td class="team-name">DK Barrel Blasters</td>
-              <td>3</td><td>6</td><td class="gb">5.0</td>
-              <td style="color:var(--flag-red)">L2</td>
-            </tr>
-            <tr>
-              <td class="rank">12</td>
-              <td class="team-name">Seaglass Swashbucklers</td>
-              <td>1</td><td>8</td><td class="gb">7.0</td>
-              <td style="color:var(--flag-red)">L6</td>
-            </tr>
-          </tbody>
-        </table>
+      <!-- New Flex Container for Dual Tables -->
+      <div class="standings-wrapper" style="display: flex; gap: 40px; flex-wrap: wrap; align-items: flex-start;">
+        
+        <!-- TABLE 1: POINTS STANDINGS (LEFT) -->
+        <div style="flex: 1; min-width: 320px;">
+          <h3 style="font-family:var(--font-heading); font-size:0.9rem; color:var(--gold); margin-bottom:15px; text-transform:uppercase; letter-spacing:0.1em;">Total Points Standings</h3>
+          <table class="standings-table" aria-label="Points Standings">
+            <thead>
+              <tr>
+                <th>Rk</th>
+                <th>Team</th>
+                <th>FPts</th>
+                <th>PtsB</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="rank">1</td><td class="team-name">Perdomo My Last Email...</td><td>9018.43</td><td class="gb">—</td></tr>
+              <tr><td class="rank">2</td><td class="team-name">Murder City Marauders</td><td>8555.05</td><td class="gb">-463.4</td></tr>
+              <tr><td class="rank">3</td><td class="team-name">G</td><td>8504.40</td><td class="gb">-514.0</td></tr>
+              <tr><td class="rank">4</td><td class="team-name">Harmon</td><td>7920.43</td><td class="gb">-1098.0</td></tr>
+              <tr><td class="rank">5</td><td class="team-name">Chicks Dig The Long Ball</td><td>7912.14</td><td class="gb">-1106.3</td></tr>
+              <tr><td class="rank">6</td><td class="team-name">DK Barrel Blasters</td><td>7784.80</td><td class="gb">-1233.6</td></tr>
+              <tr><td class="rank">7</td><td class="team-name">Ganzta's Paradise</td><td>7440.77</td><td class="gb">-1577.7</td></tr>
+              <tr><td class="rank">8</td><td class="team-name">Smuggler’s Bay Skullcrushers</td><td>7135.03</td><td class="gb">-1883.4</td></tr>
+              <tr><td class="rank">9</td><td class="team-name">Seaglass Swashbucklers</td><td>6976.33</td><td class="gb">-2042.1</td></tr>
+              <tr><td class="rank">10</td><td class="team-name">Redwater Rumrunners</td><td>6659.70</td><td class="gb">-2358.7</td></tr>
+              <tr><td class="rank">11</td><td class="team-name">Reefside Ruffians</td><td>6613.50</td><td class="gb">-2404.9</td></tr>
+              <tr><td class="rank">12</td><td class="team-name">Tidefall Thieves</td><td>6553.01</td><td class="gb">-2465.4</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- TABLE 2: LEAGUE STANDINGS (RIGHT) -->
+        <div style="flex: 1; min-width: 320px;">
+          <h3 style="font-family:var(--font-heading); font-size:0.9rem; color:var(--gold); margin-bottom:15px; text-transform:uppercase; letter-spacing:0.1em;">League Standings</h3>
+          <table class="standings-table" aria-label="League Standings">
+            <thead>
+              <tr>
+                <th>Rk</th>
+                <th>Team</th>
+                <th>W-L-T</th>
+                <th>Win%</th>
+                <th>GB</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Top 3 showing as games ahead of the 4th spot -->
+              <tr class="leader">
+                <td class="rank">1</td>
+                <td class="team-name">Murder City Marauders</td>
+                <td>10-1-0</td><td>.909</td><td class="gb" style="color:var(--gold)">+3.0</td>
+              </tr>
+              <tr>
+                <td class="rank">2</td>
+                <td class="team-name">Perdomo My Last Email...</td>
+                <td>9-2-0</td><td>.818</td><td class="gb" style="color:var(--gold)">+2.0</td>
+              </tr>
+              <tr>
+                <td class="rank">3</td>
+                <td class="team-name">G</td>
+                <td>8-3-0</td><td>.727</td><td class="gb" style="color:var(--gold)">+1.0</td>
+              </tr>
+              <!-- 4th Place Baseline -->
+              <tr style="border-bottom: 2px solid var(--gold);">
+                <td class="rank">4</td>
+                <td class="team-name">Harmon</td>
+                <td>7-4-0</td><td>.636</td><td class="gb">—</td>
+              </tr>
+              <!-- Below the line -->
+              <tr>
+                <td class="rank">5</td>
+                <td class="team-name">Chicks Dig The Long Ball</td>
+                <td>6-5-0</td><td>.545</td><td class="gb">1.0</td>
+              </tr>
+              <tr>
+                <td class="rank">6</td>
+                <td class="team-name">Smuggler’s Bay Skullcrushers</td>
+                <td>6-5-0</td><td>.545</td><td class="gb">1.0</td>
+              </tr>
+              <tr>
+                <td class="rank">7</td>
+                <td class="team-name">DK Barrel Blasters</td>
+                <td>5-6-0</td><td>.455</td><td class="gb">2.0</td>
+              </tr>
+              <tr>
+                <td class="rank">8</td>
+                <td class="team-name">Ganzta's Paradise</td>
+                <td>4-7-0</td><td>.364</td><td class="gb">3.0</td>
+              </tr>
+              <tr>
+                <td class="rank">9</td>
+                <td class="team-name">Reefside Ruffians</td>
+                <td>4-7-0</td><td>.364</td><td class="gb">3.0</td>
+              </tr>
+              <tr>
+                <td class="rank">10</td>
+                <td class="team-name">Redwater Rumrunners</td>
+                <td>3-8-0</td><td>.273</td><td class="gb">4.0</td>
+              </tr>
+              <tr>
+                <td class="rank">11</td>
+                <td class="team-name">Tidefall Thieves</td>
+                <td>3-8-0</td><td>.273</td><td class="gb">4.0</td>
+              </tr>
+              <tr>
+                <td class="rank">12</td>
+                <td class="team-name">Seaglass Swashbucklers</td>
+                <td>1-10-0</td><td>.091</td><td class="gb">6.0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
       </div>
-      <p style="font-size:0.75rem;color:var(--gray-500);margin-top:10px;font-family:var(--font-heading);letter-spacing:0.04em;">✓ Top 4 teams qualify for playoffs &nbsp;·&nbsp; GB = Games Behind 1st place</p>
-    </div>
+      <p style="font-size:0.75rem;color:var(--gray-500);margin-top:20px;font-family:var(--font-heading);letter-spacing:0.04em;">
+        GB calculated relative to the 4th Place Playoff Cutline &nbsp;·&nbsp; PtsB = Total Points behind League Leader
+      </p>
   </section>
 
   <hr class="divider" />
