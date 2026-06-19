@@ -55,128 +55,82 @@
 
   <!-- ===== STANDINGS ===== -->
   <section class="section" id="standings">
-<div class="section-header">
-        <h2 class="section-title">Standings</h2>
-        <p class="section-subtitle">Updated: End of Week 11</p>
+<!-- ===== STANDINGS SECTION ===== -->
+      <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+        <h2 style="font-family: var(--font-display); font-style: italic; font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1; margin-bottom: 5px; color: var(--white);">standings</h2>
+        <p style="font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 0.2em; color: var(--gold); font-size: 0.9rem;">Updated: End of Week 11</p>
       </div>
 
-      <!-- New Flex Container for Dual Tables -->
       <div class="standings-wrapper" style="display: flex; gap: 40px; flex-wrap: wrap; align-items: flex-start;">
         
-        <!-- TABLE 1: POINTS STANDINGS (LEFT) -->
+        <!-- LEFT TABLE: HEAD TO HEAD STANDINGS -->
         <div style="flex: 1; min-width: 320px;">
-          <h3 style="font-family:var(--font-heading); font-size:0.9rem; color:var(--gold); margin-bottom:15px; text-transform:uppercase; letter-spacing:0.1em;">Total Points Standings</h3>
+          <h3 style="font-family: var(--font-heading); font-size: 1rem; color: var(--white); margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.1em; text-align: center;">Head to Head Standings</h3>
+          <table class="standings-table" aria-label="Head to Head Standings">
+            <thead>
+              <tr>
+                <th>Rk</th>
+                <th>Team</th>
+                <th>W</th>
+                <th>L</th>
+                <th>T</th>
+                <th>GB</th>
+                <th>Streak</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="leader"><td class="rank">1</td><td class="team-name">Murder City Marauders</td><td>10</td><td>1</td><td>0</td><td class="gb" style="color:var(--gold)">+3.0</td><td>9 (W)</td></tr>
+              <tr><td class="rank">2</td><td class="team-name">Perdomo My Last Email...</td><td>9</td><td>2</td><td>0</td><td class="gb" style="color:var(--gold)">+2.0</td><td>2 (W)</td></tr>
+              <tr><td class="rank">3</td><td class="team-name">G</td><td>8</td><td>3</td><td>0</td><td class="gb" style="color:var(--gold)">+1.0</td><td>1 (L)</td></tr>
+              <tr style="border-bottom: 2px solid var(--gold);"><td class="rank">4</td><td class="team-name">Harmon</td><td>7</td><td>4</td><td>0</td><td class="gb">—</td><td>1 (W)</td></tr>
+              <tr><td class="rank">5</td><td class="team-name">Chicks Dig The Long Ball</td><td>6</td><td>5</td><td>0</td><td class="gb">1.0</td><td>4 (W)</td></tr>
+              <tr><td class="rank">6</td><td class="team-name">Smuggler's Bay Skullcrushers</td><td>6</td><td>5</td><td>0</td><td class="gb">1.0</td><td>1 (W)</td></tr>
+              <tr><td class="rank">7</td><td class="team-name">DK Barrel Blasters</td><td>5</td><td>6</td><td>0</td><td class="gb">2.0</td><td>2 (W)</td></tr>
+              <tr><td class="rank">8</td><td class="team-name">Ganzta's Paradise</td><td>4</td><td>7</td><td>0</td><td class="gb">3.0</td><td>4 (L)</td></tr>
+              <tr><td class="rank">9</td><td class="team-name">Reefside Ruffians</td><td>4</td><td>7</td><td>0</td><td class="gb">3.0</td><td>1 (L)</td></tr>
+              <tr><td class="rank">10</td><td class="team-name">Redwater Rumrunners</td><td>3</td><td>8</td><td>0</td><td class="gb">4.0</td><td>2 (L)</td></tr>
+              <tr><td class="rank">11</td><td class="team-name">Tidefall Thieves</td><td>3</td><td>8</td><td>0</td><td class="gb">4.0</td><td>3 (L)</td></tr>
+              <tr><td class="rank">12</td><td class="team-name">Seaglass Swashbucklers</td><td>1</td><td>10</td><td>0</td><td class="gb">6.0</td><td>9 (L)</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.65rem; color:var(--gray-500); margin-top:15px; font-family:var(--font-heading); text-align:center; letter-spacing:0.05em; text-transform:uppercase;">
+            GB calculated relative to the 4th Place Playoff Cutline  ·  PtsB = Total Points behind League Leader
+          </p>
+        </div>
+
+        <!-- RIGHT TABLE: TOTAL POINTS STANDINGS -->
+        <div style="flex: 1; min-width: 320px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1rem; color: var(--white); margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.1em; text-align: center;">Total Points Standings</h3>
           <table class="standings-table" aria-label="Points Standings">
             <thead>
               <tr>
                 <th>Rk</th>
                 <th>Team</th>
-                <th>FPts</th>
-                <th>PtsB</th>
+                <th style="text-align:right;">FPTS</th>
+                <th style="text-align:right;">PTSB</th>
               </tr>
             </thead>
             <tbody>
-              <tr><td class="rank">1</td><td class="team-name">Perdomo My Last Email...</td><td>9018.43</td><td class="gb">—</td></tr>
-              <tr><td class="rank">2</td><td class="team-name">Murder City Marauders</td><td>8555.05</td><td class="gb">-463.4</td></tr>
-              <tr><td class="rank">3</td><td class="team-name">G</td><td>8504.40</td><td class="gb">-514.0</td></tr>
-              <tr><td class="rank">4</td><td class="team-name">Harmon</td><td>7920.43</td><td class="gb">-1098.0</td></tr>
-              <tr><td class="rank">5</td><td class="team-name">Chicks Dig The Long Ball</td><td>7912.14</td><td class="gb">-1106.3</td></tr>
-              <tr><td class="rank">6</td><td class="team-name">DK Barrel Blasters</td><td>7784.80</td><td class="gb">-1233.6</td></tr>
-              <tr><td class="rank">7</td><td class="team-name">Ganzta's Paradise</td><td>7440.77</td><td class="gb">-1577.7</td></tr>
-              <tr><td class="rank">8</td><td class="team-name">Smuggler’s Bay Skullcrushers</td><td>7135.03</td><td class="gb">-1883.4</td></tr>
-              <tr><td class="rank">9</td><td class="team-name">Seaglass Swashbucklers</td><td>6976.33</td><td class="gb">-2042.1</td></tr>
-              <tr><td class="rank">10</td><td class="team-name">Redwater Rumrunners</td><td>6659.70</td><td class="gb">-2358.7</td></tr>
-              <tr><td class="rank">11</td><td class="team-name">Reefside Ruffians</td><td>6613.50</td><td class="gb">-2404.9</td></tr>
-              <tr><td class="rank">12</td><td class="team-name">Tidefall Thieves</td><td>6553.01</td><td class="gb">-2465.4</td></tr>
+              <tr><td class="rank">1</td><td class="team-name">Perdomo My Last Email...</td><td style="text-align:right;">9,015</td><td class="gb" style="text-align:right;">—</td></tr>
+              <tr><td class="rank">2</td><td class="team-name">Murder City Marauders</td><td style="text-align:right;">8,553</td><td class="gb" style="text-align:right;">-462</td></tr>
+              <tr><td class="rank">3</td><td class="team-name">G</td><td style="text-align:right;">8,523</td><td class="gb" style="text-align:right;">-492</td></tr>
+              <tr><td class="rank">4</td><td class="team-name">Harmon</td><td style="text-align:right;">7,926</td><td class="gb" style="text-align:right;">-1,089</td></tr>
+              <tr><td class="rank">5</td><td class="team-name">Chicks Dig The Long Ball</td><td style="text-align:right;">7,923</td><td class="gb" style="text-align:right;">-1,092</td></tr>
+              <tr><td class="rank">6</td><td class="team-name">DK Barrel Blasters</td><td style="text-align:right;">7,788</td><td class="gb" style="text-align:right;">-1,227</td></tr>
+              <tr><td class="rank">7</td><td class="team-name">Ganzta's Paradise</td><td style="text-align:right;">7,448</td><td class="gb" style="text-align:right;">-1,567</td></tr>
+              <tr><td class="rank">8</td><td class="team-name">Smuggler's Bay Skullcrushers</td><td style="text-align:right;">7,130</td><td class="gb" style="text-align:right;">-1,885</td></tr>
+              <tr><td class="rank">9</td><td class="team-name">Seaglass Swashbucklers</td><td style="text-align:right;">6,975</td><td class="gb" style="text-align:right;">-2,040</td></tr>
+              <tr><td class="rank">10</td><td class="team-name">Redwater Rumrunners</td><td style="text-align:right;">6,680</td><td class="gb" style="text-align:right;">-2,335</td></tr>
+              <tr><td class="rank">11</td><td class="team-name">Reefside Ruffians</td><td style="text-align:right;">6,601</td><td class="gb" style="text-align:right;">-2,414</td></tr>
+              <tr><td class="rank">12</td><td class="team-name">Tidefall Thieves</td><td style="text-align:right;">6,577</td><td class="gb" style="text-align:right;">-2,438</td></tr>
             </tbody>
           </table>
-        </div>
-
-        <!-- TABLE 2: LEAGUE STANDINGS (RIGHT) -->
-        <div style="flex: 1; min-width: 320px;">
-          <h3 style="font-family:var(--font-heading); font-size:0.9rem; color:var(--gold); margin-bottom:15px; text-transform:uppercase; letter-spacing:0.1em;">League Standings</h3>
-          <table class="standings-table" aria-label="League Standings">
-            <thead>
-              <tr>
-                <th>Rk</th>
-                <th>Team</th>
-                <th>W-L-T</th>
-                <th>Win%</th>
-                <th>GB</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Top 3 showing as games ahead of the 4th spot -->
-              <tr class="leader">
-                <td class="rank">1</td>
-                <td class="team-name">Murder City Marauders</td>
-                <td>10-1-0</td><td>.909</td><td class="gb" style="color:var(--gold)">+3.0</td>
-              </tr>
-              <tr>
-                <td class="rank">2</td>
-                <td class="team-name">Perdomo My Last Email...</td>
-                <td>9-2-0</td><td>.818</td><td class="gb" style="color:var(--gold)">+2.0</td>
-              </tr>
-              <tr>
-                <td class="rank">3</td>
-                <td class="team-name">G</td>
-                <td>8-3-0</td><td>.727</td><td class="gb" style="color:var(--gold)">+1.0</td>
-              </tr>
-              <!-- 4th Place Baseline -->
-              <tr style="border-bottom: 2px solid var(--gold);">
-                <td class="rank">4</td>
-                <td class="team-name">Harmon</td>
-                <td>7-4-0</td><td>.636</td><td class="gb">—</td>
-              </tr>
-              <!-- Below the line -->
-              <tr>
-                <td class="rank">5</td>
-                <td class="team-name">Chicks Dig The Long Ball</td>
-                <td>6-5-0</td><td>.545</td><td class="gb">1.0</td>
-              </tr>
-              <tr>
-                <td class="rank">6</td>
-                <td class="team-name">Smuggler’s Bay Skullcrushers</td>
-                <td>6-5-0</td><td>.545</td><td class="gb">1.0</td>
-              </tr>
-              <tr>
-                <td class="rank">7</td>
-                <td class="team-name">DK Barrel Blasters</td>
-                <td>5-6-0</td><td>.455</td><td class="gb">2.0</td>
-              </tr>
-              <tr>
-                <td class="rank">8</td>
-                <td class="team-name">Ganzta's Paradise</td>
-                <td>4-7-0</td><td>.364</td><td class="gb">3.0</td>
-              </tr>
-              <tr>
-                <td class="rank">9</td>
-                <td class="team-name">Reefside Ruffians</td>
-                <td>4-7-0</td><td>.364</td><td class="gb">3.0</td>
-              </tr>
-              <tr>
-                <td class="rank">10</td>
-                <td class="team-name">Redwater Rumrunners</td>
-                <td>3-8-0</td><td>.273</td><td class="gb">4.0</td>
-              </tr>
-              <tr>
-                <td class="rank">11</td>
-                <td class="team-name">Tidefall Thieves</td>
-                <td>3-8-0</td><td>.273</td><td class="gb">4.0</td>
-              </tr>
-              <tr>
-                <td class="rank">12</td>
-                <td class="team-name">Seaglass Swashbucklers</td>
-                <td>1-10-0</td><td>.091</td><td class="gb">6.0</td>
-              </tr>
-            </tbody>
-          </table>
+          <p style="font-size:0.65rem; color:var(--gray-500); margin-top:15px; font-family:var(--font-heading); text-align:center; letter-spacing:0.05em; text-transform:uppercase;">
+            GB calculated relative to the 4th Place Playoff Cutline  ·  PtsB = Total Points behind League Leader
+          </p>
         </div>
 
       </div>
-      <p style="font-size:0.75rem;color:var(--gray-500);margin-top:20px;font-family:var(--font-heading);letter-spacing:0.04em;">
-        GB calculated relative to the 4th Place Playoff Cutline &nbsp;·&nbsp; PtsB = Total Points behind League Leader
-      </p>
   </section>
 
   <hr class="divider" />
