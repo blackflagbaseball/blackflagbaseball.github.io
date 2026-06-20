@@ -15,8 +15,8 @@
     <div class="container">
       <div class="top-bar-ticker">
         <div>Week 9: <span>#1 Murder City defeats #2 Perdomo</span></div>
-        <div>Standings: <span>Marauders lead at 8–1</span></div>
-        <div>Playoffs begin <span>Aug 31 · Top 4 teams</span></div>
+        <div>Midseason Cutoff: <span id="countdown-midseason">(June 29)</span></div>
+        <div>Trade Deadline: <span id="countdown-deadline">(July 12)</span></div>
       </div>
       <div>2026 Season</div>
     </div>
@@ -443,6 +443,28 @@
       </div>
     </div>
   </footer>
+  
+<script>
+  function daysUntil(year, month, day) {
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+    var target = new Date(year, month - 1, day);
+    return Math.ceil((target - today) / (1000 * 60 * 60 * 24));
+  }
 
+  function formatCountdown(days, dateStr) {
+    if (days < 0)  return dateStr + ' (Passed)';
+    if (days === 0) return 'Today! (' + dateStr + ')';
+    if (days === 1) return '1 Day (' + dateStr + ')';
+    return days + ' Days (' + dateStr + ')';
+  }
+
+  document.getElementById('countdown-midseason').textContent =
+    formatCountdown(daysUntil(2026, 6, 29), 'June 29');
+
+  document.getElementById('countdown-deadline').textContent =
+    formatCountdown(daysUntil(2026, 7, 12), 'July 12');
+</script>
+  
 </body>
 </html>
