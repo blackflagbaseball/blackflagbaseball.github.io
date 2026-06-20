@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Black Flag Baseball League — The Pirate Code (Official League Rules)" />
+  <title>The Pirate Code | Black Flag Baseball</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏴‍☠️</text></svg>">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .rules-container { line-height: 1.6; color: var(--gray-200); }
+    .rules-section { margin-bottom: 50px; padding-bottom: 30px; border-bottom: 1px solid var(--gray-800); }
+    .rules-section h2 { font-family: var(--font-display); font-style: italic; font-size: 2.5rem; color: var(--white); margin-bottom: 20px; text-transform: lowercase; }
+    .rules-section h3 { font-family: var(--font-heading); color: var(--gold); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 30px; margin-bottom: 15px; font-size: 1.1rem; }
+    .rules-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 20px; }
+    .rule-item { background: rgba(255,255,255,0.03); padding: 20px; border-left: 3px solid var(--flag-red); }
+    .rule-item strong { color: var(--white); display: block; margin-bottom: 5px; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; }
+    .data-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9rem; }
+    .data-table th { text-align: left; background: var(--gray-800); color: var(--gold); padding: 12px; text-transform: uppercase; font-family: var(--font-heading); font-size: 0.75rem; }
+    .data-table td { padding: 10px 12px; border-bottom: 1px solid var(--gray-800); }
+    .constitution-text { white-space: pre-wrap; font-family: inherit; }
+    .point-val { color: var(--gold); font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="site-nav" role="navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">black <span>flag</span> baseball</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#standings">Standings</a></li>
+        <li><a href="pirate-code.html" class="active">Pirate Code</a></li>
+        <li><a href="index.html#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero" style="min-height: 40vh;">
+    <div class="hero-content">
+      <p class="hero-eyebrow">The Official Rules</p>
+      <h1 class="hero-title"><em>the pirate<br>code</em></h1>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container rules-container">
+
+      <!-- LEAGUE SUMMARY -->
+      <div class="rules-section">
+        <h2>League Rules Summary</h2>
+        <p>2026 MLBBlack Flag Baseball League</p>
+        
+        <div class="rules-grid">
+          <div class="rule-item"><strong>League Name</strong> Black Flag Baseball League</div>
+          <div class="rule-item"><strong>Scoring System</strong> Head-to-Head Points</div>
+          <div class="rule-item"><strong>Max Teams</strong> 12</div>
+          <div class="rule-item"><strong>Commissioner</strong> Murder City Marauders (pvhawkeye)</div>
+        </div>
+
+        <h3>Schedule & Playoffs</h3>
+        <p>Stats Accumulate: Wed Mar 25, 2026 – Sun Sep 20, 2026</p>
+        <p>Playoffs Begin: Scoring Period 22 (Aug 31/26 - Sep 6/26)</p>
+        <p>Teams Qualifying: 4</p>
+      </div>
+
+      <!-- ROSTERS -->
+      <div class="rules-section">
+        <h2>Rosters</h2>
+        <div class="rules-grid">
+          <div class="rule-item"><strong>Max Total Players</strong> 33</div>
+          <div class="rule-item"><strong>Max Active Players</strong> 22</div>
+          <div class="rule-item"><strong>Minor League Slots</strong> 7</div>
+          <div class="rule-item"><strong>Injured Reserve Slots</strong> 3</div>
+        </div>
+
+        <table class="data-table">
+          <thead>
+            <tr><th>Position</th><th>Min Active</th><th>Max Active</th><th>Total Max</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Catcher (C)</td><td>0</td><td>1</td><td>1</td></tr>
+            <tr><td>1st Base (1B)</td><td>0</td><td>1</td><td>1</td></tr>
+            <tr><td>2nd Base (2B)</td><td>0</td><td>1</td><td>1</td></tr>
+            <tr><td>3rd Base (3B)</td><td>0</td><td>1</td><td>1</td></tr>
+            <tr><td>Shortstop (SS)</td><td>0</td><td>1</td><td>1</td></tr>
+            <tr><td>Middle Infield (MI)</td><td>0</td><td>1</td><td>1</td></tr>
+            <tr><td>Outfield (OF)</td><td>0</td><td>5</td><td>5</td></tr>
+            <tr><td>Utility (UT)</td><td>0</td><td>1</td><td>1</td></tr>
+            <tr><td>Starting Pitcher (SP)</td><td>0</td><td>5</td><td>5</td></tr>
+            <tr><td>Relief Pitcher (RP)</td><td>0</td><td>5</td><td>5</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- SCORING -->
+      <div class="rules-section">
+        <h2>Scoring</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+          <div>
+            <h3>Hitting</h3>
+            <table class="data-table">
+              <thead><tr><th>Category</th><th>Points</th></tr></thead>
+              <tbody>
+                <tr><td>At Bats (AB)</td><td class="point-val">-1</td></tr>
+                <tr><td>Hits (H)</td><td class="point-val">5.6</td></tr>
+                <tr><td>Doubles (2B)</td><td class="point-val">2.9</td></tr>
+                <tr><td>Triples (3B)</td><td class="point-val">5.7</td></tr>
+                <tr><td>Home Runs (HR)</td><td class="point-val">9.4</td></tr>
+                <tr><td>Walks (BB)</td><td class="point-val">3</td></tr>
+                <tr><td>Hit By Pitches (HBP)</td><td class="point-val">3</td></tr>
+                <tr><td>Stolen Bases (SB)</td><td class="point-val">1.9</td></tr>
+                <tr><td>Caught Stealing (CS)</td><td class="point-val">-2.8</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3>Pitching</h3>
+            <table class="data-table">
+              <thead><tr><th>Category</th><th>Points</th></tr></thead>
+              <tbody>
+                <tr><td>Innings Pitched (IP)</td><td class="point-val">7.4</td></tr>
+                <tr><td>Strikeouts Pitched (K)</td><td class="point-val">2</td></tr>
+                <tr><td>Saves (SV)</td><td class="point-val">5</td></tr>
+                <tr><td>Holds (HLD)</td><td class="point-val">4</td></tr>
+                <tr><td>Hits Allowed (H)</td><td class="point-val">-2.6</td></tr>
+                <tr><td>Walks Allowed (BB)</td><td class="point-val">-3</td></tr>
+                <tr><td>Hit Batsmen (HB)</td><td class="point-val">-3</td></tr>
+                <tr><td>Home Runs Allowed (HR)</td><td class="point-val">-12.3</td></tr>
+                <tr><td>Games Started (GS)</td><td class="point-val">0</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p style="font-size: 0.8rem; color: var(--gray-500);">Max Games Started - Pitching: 8 per Scoring Period</p>
+      </div>
+
+      <!-- CONSTITUTION -->
+      <div class="rules-section">
+        <h2>League Constitution</h2>
+        <div class="constitution-text" style="color: var(--white); font-size: 1rem; background: rgba(0,0,0,0.3); padding: 30px; border-radius: 4px;">
+1. League Overview
+Platform: Fantrax
+Format: Daily Lineups, Weekly Head‑to‑Head Matchups
+Scoring System: Fangraphs Points
+Teams: 12
+
+2. Finances
+2.1 Buy-In & Security Deposit
+Annual Buy-In: $20
+First year $20 buy in and NO deposit!
+One‑time $40 security deposit collected after Year 1
+2.4 Prizes
+1st: $120 | 2nd: $60 | 3rd: $30
+Regular Season Most Points Overall: $30
+
+3. Roster Structure
+3.1 MLB Roster (33 Players)
+22 Starters: C, 1B, 2B, 3B, SS, MI, OF × 5, UTIL, SP × 5, RP × 5
+11 Reserve Spots
+3.2 Minor‑League Roster (7 Players)
+Prospects added via draft or trade only. Held until end of season when called up.
+3.3 Injured Reserve (IR) (3 Players)
+Transactions blocked if players aren't removed within 1 day grace period of coming off real life IL.
+
+4. Keeper Rules
+4.1 MLB Keepers
+Each team may keep 22 players (ONLY 5 AFTER SEASON 1!)
+4.4 Service‑Time Limit
+Non‑franchise MLB players may be kept for a maximum of 3 seasons.
+4.5 Trading Keepers
+Service time transfers with traded players.
+
+5. Service‑Time Calculation
+Full Season: On roster before June 29, 2026.
+Not Full Season: Acquired on/after June 29, 2026.
+
+6. Player Acquisition Rules
+Max of 3 free agent claims per week.
+Add/drops locked at start of playoffs.
+
+7. Schedule / Misc
+Trade Deadline: July 12, 2026
+Adds/Drops Deadline: August 30, 2026
+Pitcher Limitations: Max 8 GS per matchup. Manual corrections apply for openers/bulk relief.
+
+9. Draft and Competitive Balance
+Draft Order: 4th-12th then Playoff Finishes (3rd, 2nd, 1st).
+Teams finishing 10th-12th receive 2 extra MLB keeper slots starting after Year 2.
+
+11. Violations
+Commissioner reserves right to resolve disputes in spirit of competitive integrity.
+
+YEAR 1 ITEMS:
+Matchup 1 GS Limit: 14 GS.
+All other matchups: 8 GS Max.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>&copy; 2026 Black Flag Baseball League</span>
+        <a href="index.html" style="color:var(--gold); text-decoration:none;">Return Home</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
